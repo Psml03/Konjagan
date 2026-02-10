@@ -9,19 +9,23 @@
   </head>
   <body>
     <header class="site-header">
-      <div class="brand">Kon Jagan</div>
-      <nav class="nav-desktop">
-        <a href="#home">Home</a>
-        <a href="#products">Products</a>
-        <a href="#about">About Us</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="header-inner">
+        <div class="left"></div>
+        <nav class="nav-desktop">
+          <a href="#home">Home</a>
+          <a href="#products">Products</a>
+          <a href="#about">About Us</a>
+          <a href="#news">News</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="right">
+          <button id="hamburger" class="hamburger" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
     </header>
 
     <aside id="sidebar" class="sidebar" aria-hidden="true">
@@ -39,8 +43,12 @@
     <main>
       <section id="home" class="hero">
         <div class="hero-inner">
-          <h1>Kon Jagan</h1>
-          <p class="tag">Materials and Technology</p>
+          <div class="brand-row">
+            <img src="IMG_0332.JPG" alt="Kon Jagan logo" class="hero-logo">
+            <div class="brand-text">
+              <h1>Kon Jagan</h1>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -51,31 +59,57 @@
         </div>
         <div class="cards">
           <article class="card">
-            <div class="card-icon">Si</div>
-            <h3>Precision Diode</h3>
-            <p>Low-leakage diodes for high-frequency applications.</p>
-            <a class="btn" href="#contact">Request Info</a>
+            <div class="card-icon">PD</div>
+            <h3>Pdopant</h3>
+            <p>Specialty dopant material. Contact us for quantity and pricing.</p>
           </article>
 
           <article class="card">
-            <div class="card-icon">MC</div>
-            <h3>Microcontroller</h3>
-            <p>Ultra-low-power MCU with AI inference support.</p>
-            <a class="btn" href="#contact">Request Info</a>
+            <div class="card-icon">HT</div>
+            <h3>HTL - HTM211</h3>
+            <p>Hole transport layer material suitable for device stacks.</p>
           </article>
 
           <article class="card">
-            <div class="card-icon">RF</div>
-            <h3>RF Amplifier</h3>
-            <p>High linearity amplifiers for wireless systems.</p>
-            <a class="btn" href="#contact">Request Info</a>
+            <div class="card-icon">BP</div>
+            <h3>B Prime</h3>
+            <p>Blue host component used in emissive layers.</p>
           </article>
 
           <article class="card">
-            <div class="card-icon">Pwr</div>
-            <h3>Power Controller</h3>
-            <p>Efficient power management ICs.</p>
-            <a class="btn" href="#contact">Request Info</a>
+            <div class="card-icon">BH</div>
+            <h3>BH</h3>
+            <p>Blue host matrix material for high-efficiency devices.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">BD</div>
+            <h3>BD</h3>
+            <p>Blue dopant—custom concentrations available on request.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">HB</div>
+            <h3>HBL</h3>
+            <p>Hole blocking layer materials for improved device balance.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">E1</div>
+            <h3>ETL1</h3>
+            <p>Electron transport layer component; optimized for mobility.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">E2</div>
+            <h3>ETL2 - Liq</h3>
+            <p>Secondary ETL material (Liq variant) for enhanced injection.</p>
+          </article>
+
+          <article class="card">
+            <div class="card-icon">CP</div>
+            <h3>CPL</h3>
+            <p>Cathode protection layer materials for device longevity.</p>
           </article>
         </div>
       </section>
@@ -101,12 +135,26 @@
 
       <section id="contact" class="section alt contact">
         <div class="section-header"><h2>Contact Us</h2></div>
-        <form class="contact-form" action="#" onsubmit="event.preventDefault(); alert('Thanks — we will contact you.');">
-          <label>Name<input type="text" name="name" required></label>
-          <label>Email<input type="email" name="email" required></label>
-          <label>Message<textarea name="message" rows="4"></textarea></label>
-          <button class="btn primary" type="submit">Send</button>
-        </form>
+        <div class="contact-grid">
+          <div class="contact-details">
+            <p><strong>Sambhramita Das</strong></p>
+            <p><strong>Girija Samal</strong></p>
+            <p>M/S KONJAGAN MATERIALS AND TECHNOLOGY PRIVATE LIMITED</p>
+            <p>Registered Office: House No. 61, Moon Life City, Kalarahanga<br>
+            Khorda, Bhubaneswar, Orissa, India, 751024</p>
+            <p>Phone: +91 7488382253</p>
+            <p>Email: <a href="mailto:konjagann@gmail.com">konjagann@gmail.com</a></p>
+
+            <div class="contact-form-wrap">
+              <form class="contact-form" action="#" onsubmit="event.preventDefault(); alert('Thanks — we will contact you.');">
+                <label>Name<input type="text" name="name" required></label>
+                <label>Email<input type="email" name="email" required></label>
+                <label>Message<textarea name="message" rows="4"></textarea></label>
+                <button class="btn primary" type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
